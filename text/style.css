@@ -1,0 +1,45 @@
+body {
+    background-color: #666666;
+}
+#content{
+    margin-top: 1in;
+    margin-left: 1in;
+    margin-right: 1in;
+    background-color: wheat;
+    border-radius: 20px;
+}
+#header-logo{
+    float: left;
+    width: 20%;
+}
+#header-name{
+    float: left;
+    text-align: center;
+    width: 60%;
+    text-align: center;
+    height: 1in;
+}
+#addvertise{
+    width: 20%;
+    float: left;
+}
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+td {
+    border: 2px solid;
+  }
+#form {
+    width: 100%;
+}
+#wysrywy{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#wprowadzanie {
+    margin-left: 20%;
+    margin-right: 20%;
+}
