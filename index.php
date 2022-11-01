@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>Wysrajnik</title>
     <link rel="stylesheet" href="text/style.css">
+    <link rel="icon" href="photos/kupa.png">
 </head>
 <body>
     <div id="content">
-        <div id="header">
+        <header>
            <div id="header-logo"><img id="logo" src="photos/kupa.png"></div>
            <div id="header-name"><h1>Wysrajnik</h1></div>
            <div id="addvertise"></div>
-        </div>
+        </header>
 
          <div id="wysrywy">
             
@@ -21,14 +22,14 @@
          </div>
          <div id="wprowadzanie">
             <p>Napisz swój wysryw</p>
-                <form action="" method="post">
+                <form action="" method="POST" name="form1">
                     <p>Nick</p>
-                    <input type="text" name="nick">
+                    <input type="text" name="nick"><br>
                     <p>Wysryw</p>
                     <input id="form" type="text" name="tresc"><br><br>
-                    <button type="submit">Wysraj</button><br><br>
+                    <button type="submit">Wyślij</button><br><br>
                 </form>
-        
+
          </div>
     </div>
 </body>

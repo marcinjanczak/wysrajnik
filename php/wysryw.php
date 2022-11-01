@@ -21,13 +21,13 @@ echo<<<END
         <td>Data wstawienia</td>
     </tr>
 END;
-while($row=mysqli_fetch_row($wynik)){
+while($row=mysqli_fetch_array($wynik)){
 
 echo<<<END
     <tr> 
-         <td>$row[1] </td>
-         <td><strong>$row[0] </strong></td>
-         <td>$row[2] </td>
+         <td>$row[wysryw] </td>
+         <td><strong>$row[nick] </strong></td>
+         <td>$row[data] </td>
     </tr>
 END;
 }
