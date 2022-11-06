@@ -1,3 +1,0 @@
-function button (){
-    document.contact
-}

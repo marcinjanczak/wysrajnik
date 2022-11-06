@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Wysrajnik</title>
-    <link rel="stylesheet" href="text/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="photos/kupa.png">
 </head>
 <body>
@@ -11,26 +11,39 @@
         <header>
            <div id="header-logo"><img id="logo" src="photos/kupa.png"></div>
            <div id="header-name"><h1>Wysrajnik</h1></div>
-           <div id="addvertise"></div>
+            <div id="header-logo"></div>
         </header>
-
-         <div id="wysrywy">
-            
-<?php
+    
+    <div id="wysrywy">
+    <?php
     include 'php/wysryw.php';
-?>
-         </div>
-         <div id="wprowadzanie">
-            <p>Napisz swój wysryw</p>
-                <form action="" method="POST" name="form1">
+    ?>
+    </div>
+    
+    <div id="wprowadzanie">
+            <h3>Napisz swój wysryw</h3>
+                <form action="" method="get" id="form">
                     <p>Nick</p>
                     <input type="text" name="nick"><br>
                     <p>Wysryw</p>
-                    <input id="form" type="text" name="tresc"><br><br>
-                    <button type="submit">Wyślij</button><br><br>
+                    <textarea name="tresc"></textarea><br><br>
+                    <button onclick="wyslij()">Wyślij</button> <br><br>
                 </form>
-
-         </div>
     </div>
+</div>
+
+<script type="text/javascript">
+
+function wyslij(){
+    document.getElementById("form").subbmit();
+    document.getElementById("form").reset();
+    document.location.reload();
+
+}
+
+
+</script>
+
+
 </body>
 </html>
