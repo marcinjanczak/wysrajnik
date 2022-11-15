@@ -1,4 +1,4 @@
-function button (){
-    document.form1.submit();
-    document.form1.reset();
+function wyslij(){
+     document.getElementById("form").subbmit();
+     document.getElementById("form").reset();
 }
