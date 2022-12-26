@@ -7,46 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="photos/kupa.png">
+    <script src="javascript/skrypt.js" defer></script>
 </head>
-
-
 <body>
-    <div id="content">
-        <header>
-           <div id="header-logo"><img src="photos/kupa.png" class="logo"></div>
-           <div id="header-name"><h1>Wysrajnik</h1></div>
-           <div id="header-logo"></div>
+
+       <header>
+        <img src="photos/kupa.png" alt="gówno">
+           <h1>Wysrajnik</h1>
+           <button>Wyślij formularz</button>
         </header>
         
-        <div id="wprowadzanie">
+        <div id="form">
+             <div class="form-content">
                 <h3>Napisz swój wysryw</h3>
-                    <form action="php/send.php" method="post" id="form">
-                        <label name="nick"><strong>  Nick</strong></label><br>
+                    <form action="php/send.php" method="post">
+                        <label>Nick</label><br>
                         <input type="text" name="nick"><br>
-                        <label id="wysryw"><strong> Wysryw</strong></label>
+                        <label>Wysryw</label><br>
                         <textarea name="tresc"></textarea><br><br>
-                        <button onclick="wyslij()" name="wyslij"><strong>Wyślij</strong></button> <br><br>
-                    </form>
-        </div>
-    <div id="wysrywy">
-    <?php
-    include 'php/wysryw.php';
-    ?>
+                        <input type="submit" value="wyślij">
+                    </form>                 
+            </div>    
+        </div> 
+<main>
+    <div class="wysrywy">
+        <?php
+        include 'php/wysryw.php';
+        ?>
+        <footer>
+           <a href="https://github.com/marcinjanczak/wysrajnik" target="_blank"> <img class="github"src="photos/github.png"></a>
+        </footer>  
+
     </div>
-    <footer>
-       <a href="https://github.com/marcinjanczak/wysrajnik" target="_blank"> <img class="github"src="photos/github.png"></a>
-    </footer>    
-</div>
-
-
-<script type="text/javascript">
-function wyslij(){
-     document.getElementById("form").subbmit();
-     document.getElementById("form").reset();
-}
-</script>
-
-
+</main> 
 
 </body>
+
 </html>

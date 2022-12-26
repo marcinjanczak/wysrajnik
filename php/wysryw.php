@@ -10,11 +10,10 @@ $wynik=mysqli_query($connect,$kwerenda);
 
 while($row=mysqli_fetch_array($wynik)){
 echo<<<END
-    <div id="wpis">
-    <div id="wpis-nick"><h4>$row[nick]</h4></div>
-    <div id="wpis-data"><h4>$row[data]</h4></div>
-    <div id="wpis-tresc"><p>$row[wysryw]</p></div>
-    <hr>
+    <div class="wpis">
+        <h4>$row[nick]</h4>
+        <h4>$row[data]</h4>
+        <p>$row[wysryw]</p>
     </div>
     
 END;
